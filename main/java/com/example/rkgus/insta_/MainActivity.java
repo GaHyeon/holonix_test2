@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         btn_like1.setOnClickListener(imgHeartButton);
         btn_like2.setOnClickListener(imgHeartButton);
         btn_like3.setOnClickListener(imgHeartButton);
-
     }
 
     View.OnClickListener imgHeartButton = new View.OnClickListener() {
@@ -45,28 +44,28 @@ public class MainActivity extends AppCompatActivity {
             }
             //여러 게시글 좋아요가 왜 안될까.
             //feed2 like
-//            if(view.getId()==R.id.heart_img2) {
-//                if (j==1) {
-//                    btn_like1.setImageResource(R.drawable.ic_btn_heart_clicked);
-//                    j--;
-//                }
-//                else {
-//                    btn_like1.setImageResource(R.drawable.ic_btn_heart);
-//                    j++;
-//                }
-//            }
-//
-//            //feed3 like
-//            if(view.getId()==R.id.heart_img3) {
-//                if (k==1) {
-//                    btn_like1.setImageResource(R.drawable.ic_btn_heart_clicked);
-//                    k--;
-//                }
-//                else {
-//                    btn_like1.setImageResource(R.drawable.ic_btn_heart);
-//                    k++;
-//                }
-//            }
+            if(view.getId()==R.id.heart_img2) {
+                if (j==1) {
+                    btn_like2.setImageResource(R.drawable.ic_btn_heart_clicked);
+                    j--;
+                }
+                else {
+                    btn_like2.setImageResource(R.drawable.ic_btn_heart);
+                    j++;
+                }
+            }
+
+            //feed3 like
+            if(view.getId()==R.id.heart_img3) {
+                if (k==1) {
+                    btn_like3.setImageResource(R.drawable.ic_btn_heart_clicked);
+                    k--;
+                }
+                else {
+                    btn_like3.setImageResource(R.drawable.ic_btn_heart);
+                    k++;
+                }
+            }
         }
     };
 }
